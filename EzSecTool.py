@@ -146,7 +146,7 @@ class EzSecGUI:
         global lbl_hashcat_wordfile
         global lbl_hashcat_folder
 
-        #hashTypeEntry = tk.StringVar() Carlos I think we can remove this
+        hashTypeEntry = tk.StringVar()
         #Create GUI Window for hashcat
         selected_hash = tk.StringVar()
         hashcat_window = tk.Toplevel()
@@ -170,7 +170,6 @@ class EzSecGUI:
         word_list_button_browse = tk.Button(hashcat_window,
                                             text="Select Word List File",
                                             command=self.browse_files_hashcat_wordfile)
-        #radio_name = tk.StringVar(hashcat_window, "1") Carlos I think we can delete this too
         lbl_hashcat_folder = tk.Label(hashcat_window,
                                        text="Your chosen output folder path will show here.")
         lbl_hashcat_hashfile = tk.Label(hashcat_window,
